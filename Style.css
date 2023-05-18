@@ -1,0 +1,416 @@
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loaded .loader {
+  display: none;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto","Sans serif";
+  text-align: justify;
+  background-color: aliceblue;
+} 
+
+main li{
+ 
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+
+}
+
+main h2{
+  text-align: center;
+  font-family: "Gagalin";
+}
+
+main h3{
+  text-align: center;
+  font-family: "Gagalin";
+}
+.contenedor{
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.fond_animate{
+  width: 100%;  
+  height: 100vh;
+  background: linear-gradient(to right, #005C98, #505BDA);
+  position: relative;
+  overflow: hidden;
+}
+
+.header_nav{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header_nav h1{
+  color: #fff;
+  font-family: 'Gagalin';
+}
+
+.header_nav nav a{
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.banner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.banner_title h2{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.banner_title .contacto{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    background: #1A2849;
+    padding: 20px;
+}
+
+.banner_img{
+  animation: movimiento 2.5s linear infinite;
+}
+
+.banner_img img{
+  width: 600px;
+  display: block;
+}
+
+.Referencias {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+.Referencias h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: black;
+  font-family: 'Gagalin';
+  text-align: center;
+}
+
+.Referencias h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: black;
+  font-family: 'Gagalin';
+  text-align: center;
+
+}
+
+.Referencias p {
+  margin-bottom: 10px;
+  margin-bottom: 20px;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+
+}
+
+.Referencias ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Referencias li {
+  margin-bottom: 5px;
+  background-color: aliceblue;
+  padding: 10px;
+}
+Esto el
+
+/* Agregado para alinear con el código de Formación */
+.Referencias h2,
+.Referencias h3 {
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+.descripcion h3{ 
+  color: black;
+  font-family: 'Gagalin';
+  text-align: center;
+}
+
+.descripcion p{
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+}
+
+.informacion {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+  
+
+}
+
+
+
+
+
+.informacion h2{
+  color: black;
+  font-family: 'Gagalin';
+  text-align: center;
+}
+
+
+.Formación {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.Formación h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: black;
+  font-family: 'Gagalin';
+  text-align: center;
+}
+
+.Formación h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: black;
+  font-family: 'Gagalin';
+  text-align: center;
+
+}
+
+.Formación p {
+  margin-bottom: 10px;
+  margin-bottom: 20px;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+
+}
+
+.Formación p {
+  transition: color 0.5s ease-in-out;
+}
+
+.Formación p:hover {
+  color: burlywood;
+}
+
+.Formación ul {
+  margin-bottom: 10px;
+}
+
+.Formación li {
+  margin-bottom: 5px;
+}
+
+/* Agregado para centrar los títulos */
+.Formación h2,
+.Formación h3 {
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+
+.Formación br {
+  line-height: 10px;
+}
+
+
+
+.header_nav .contenedor{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.burbuja{
+  border-radius: 50%;
+  background: #f6d1de;
+  opacity: .3;
+
+  position: absolute;
+  bottom: -150;
+  
+  animation: burbujas 3s linear infinite ;
+}
+
+.burbuja:nth-child(1){
+  width: 80px;
+  height: 80px;
+  left: 5%;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+  width: 100px;
+  height: 100px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(3){
+  width: 20px;
+  height: 20px;
+  left: 15%;
+  animation-duration: 1.5s;
+  animation-delay: 7s;
+}
+
+.burbuja:nth-child(4){
+  width: 50px;
+  height: 50px;
+  left: 90%;
+  animation-duration: 6s;
+  animation-delay: 3s;
+}
+
+.burbuja:nth-child(5){
+  width: 70px;
+  height: 70px;
+  left: 65%;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.burbuja:nth-child(6){
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(8){
+  width: 100;
+  height: 100px;
+  left: 52%;
+  animation-duration: 5s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+  width: 65px;
+  height: 65px;
+  left: 51%;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+.burbuja:nth-child(10){
+  width: 40px;
+  height: 40px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 4s;
+}
+
+
+@keyframes burbujas{
+  0%{
+      bottom: 0;
+      opacity: 0;
+  }
+  30%{
+      transform: translateX(30px);
+  }
+  50%{
+      opacity: .4;
+  }
+  100%{
+      bottom: 100vh;
+      opacity: 0;
+  }
+}
+
+@keyframes movimiento{
+  0%{
+      transform: translateY(0);
+  }
+  50%{
+      transform: translateY(30px);
+  }
+  100%{
+      transform: translateY(0);
+  }
+}
+
+
+footer{
+  background-color:  #1A5CAD;
+  padding: 1em 0;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+body{
+  position: relative;
+  padding-bottom: 3em;
+}
+
+
+
+
+
