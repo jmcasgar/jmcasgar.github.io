@@ -7,14 +7,12 @@
        <link rel="stylesheet" href="Style.css">
         <title>Cv</title>
         <link href="Style.css" rel="stylesheet" type="text/css">
+        <div class="spinner"></div>
         
     </head>
    
 
         <body>
-            <div class="loader"></div>
-
-            
             <div id="page">
                 <!--marca, logotipo, nombre la empresa y todas las navegaciones principales-->
                 
@@ -26,19 +24,19 @@
                             <nav class="main">
                                 
                                 
-                                    <a href="#">Referencias laborales</a>
-                                    <a href="#">Experiencia</a>
-                                    <a href="#">Descripción</a>
-                                    <a href="#">Formaciòn</a>
+                                
+                                    <a href="#R">Experiencia</a>
+                                    <a href="#D">Descripción</a>
+                                     <a href="#da">Datos</a>
                                
                             </nav>
                         </div>
                      </div>
                      <section class="banner contenedor">
-                        <secrion class="banner_title">
+                        <section class="banner_title">
                             <h2>¿Quien soy?</h2>
-                            <a href="#" class="contacto">Contactamé</a>
-                        </secrion>
+                            <a href="#Contacto" class="contacto">Contactamé</a>
+                        </section>
                         <div class="banner_img"><img src="imagen.jpg.png" alt=""></div>
                       
                      </section>
@@ -67,39 +65,26 @@
     
                 <!--informacion general de la pagina-->
                 <main>
-                    
-                      
-                    <center>
-                        <section class="informacion">
-                            <h2>Información</h2>
-                          </section>
-                          
-                    </center>
-                   
-                        <ul>
-                            <li>Paola Andrea Armero Moreno</li>
-                            <li>3167069674</li>
-                            <li>andrearmero@gmail.com</li>
-                          </ul>
-                      </center>
-                      
-                   
-                  
-                      
-                        
-                       
-                        <div> <section class="descripcion">
+                  <div class="Datos" id="da">  <h1>Datos Personales</h1>
+
+                    <p><strong>Nombre:</strong> Paola Andrea Armero Moreno</p>
+                    <p><strong>Teléfono:</strong> 3167069674</p>
+                    <p><strong>E-mail:</strong> andrearmero@gmail.com</p></div>
+                
+
+                        <div> <section class="descripcion"id="D">
                           
                             <br>
-                               <h3>A cerca de mí</h3><br>
+                               <h2>A cerca de mí</h2><br>
                         
                              <p>Estudiante de decimo semestre de Ingenieria de telecomunicaciones, con interés y disposición en desarrollar actividades relacionadas con mantenimiento preventivo y correctivo de equipos de computo, soporte técnico en sitio y remoto, servicios de telecomunicaciones, configuración de direcciones IP, manejo en bases de datos SQL, uso de plataformas,  agendamiento de visitas técnicas, atención al cliente interno y externo. Con seguimiento de instrucciones, orientación al detalle, trabajo en equipo  y perseverancia.<br></section>   
                         
                                 <div>
-                                    <h2>Formación académica</h2>
-                                    <section class="Formación">
+                                  <h3>Formación</h3>  
+                                    <section class="Formación" id="F">
                                         
-                                        
+                                      
+
                                         <p>Ingenieria en telecomunicaciones<br>
                                         Institucion: Fundación universitaria Unipanamericana<br>
                                         Estado: En curso</p>
@@ -121,7 +106,7 @@
       
                                 </div>
                                 
-                                  <div class="Referencias">
+                                  <div class="Referencias" id="R">
                                     <ul>
                                       <h2>Experiencia:</h2>
                                   
@@ -172,17 +157,37 @@
                     </section>
                 </footer>
             </div>
+           
+
+<div class="container" id="Contacto">
+  <h3>Contacto</h3>
+  <form action="/action_page.php">
+    <label for="fname">Nombre</label>
+    <input type="text" id="fname" name="firstname" placeholder="Tu nombre..">
+
+    <label for="lname">Apellido</label>
+    <input type="text" id="lname" name="lastname" placeholder="Tu apellido..">
+
+    <label for="subject">Asunto</label>
+    <textarea id="subject" name="subject" placeholder="Escribe algo.." style="height:200px"></textarea>
+
+    <input type="submit" value="Enviar">
+  </form>
+</div>
+
+</body>
+</html>
     
         </body>
-        <div class="spinner"></div>
+        
   
-
+        <script>
+          window.addEventListener('load', function() {
+            document.querySelector('.loaded').classList.add('show');
+          });
+        </script>
     <script src="Corrector ortograficó.js">
  </script>
-     <script>
-        window.addEventListener('load', function() {
-          document.querySelector('.loaded').classList.add('show');
-        });
-      </script>
+     
    
     </html>

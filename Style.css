@@ -1,20 +1,3 @@
-.loader {
-  border: 16px solid #f3f3f3;
-  border-top: 16px solid #3498db;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.loaded .loader {
-  display: none;
-}
 
 *{
   margin: 0;
@@ -25,28 +8,14 @@
 body {
   font-family: "Roboto","Sans serif";
   text-align: justify;
-  background-color: aliceblue;
+  background-color: #F6F1F1;
 } 
 
-main li{
- 
-  color: black;
-  font-size: 20px;
-  text-decoration: none;
-  display: inline-block;
-  padding: 20px;
-
+main a{
+  color: #F6F1F1;
 }
 
-main h2{
-  text-align: center;
-  font-family: "Gagalin";
-}
 
-main h3{
-  text-align: center;
-  font-family: "Gagalin";
-}
 .contenedor{
   width: 90%;
   max-width: 1200px;
@@ -56,7 +25,7 @@ main h3{
 .fond_animate{
   width: 100%;  
   height: 100vh;
-  background: linear-gradient(to right, #005C98, #505BDA);
+  background: linear-gradient(to right, #146C94, #19A7CE);
   position: relative;
   overflow: hidden;
 }
@@ -69,7 +38,7 @@ main h3{
 }
 
 .header_nav h1{
-  color: #fff;
+  color: #F6F1F1;
   font-family: 'Gagalin';
 }
 
@@ -87,18 +56,18 @@ main h3{
 }
 
 .banner_title h2{
-  color: #fff;
+  color: #F6F1F1;
   font-size: 60px;
   font-weight: 800;
   margin-bottom: 20px;
 }
 
 .banner_title .contacto{
-    color: #fff;
+    color: #F6F1F1;
     font-size: 20px;
-    text-decoration: none;
+    text-decoration: dotted;
     display: inline-block;
-    background: #1A2849;
+    background: #19A7CE;
     padding: 20px;
 }
 
@@ -111,8 +80,36 @@ main h3{
   display: block;
 }
 
+.Datos {
+  color: #19A7CE;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 20px;
+  text-align: justify;
+  
+}
+.Datos h1 {
+  text-align: center;
+  color: #146C94;
+  font-family: 'Gagalin';
+}
+
+
+.descripcion h2{ 
+  color: #146C94;
+  font-family: 'Gagalin';
+  text-align: center;
+}
+
+.descripcion p{
+  color: #19A7CE;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+}
+
 .Referencias {
-  color: black;
   font-size: 20px;
   text-decoration: none;
   display: inline-block;
@@ -125,7 +122,7 @@ main h3{
 .Referencias h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: black;
+  color: #146C94;
   font-family: 'Gagalin';
   text-align: center;
 }
@@ -133,7 +130,7 @@ main h3{
 .Referencias h3 {
   font-size: 20px;
   margin-bottom: 5px;
-  color: black;
+  color: #146C94;
   font-family: 'Gagalin';
   text-align: center;
 
@@ -142,7 +139,7 @@ main h3{
 .Referencias p {
   margin-bottom: 10px;
   margin-bottom: 20px;
-  color: black;
+  color:  #19A7CE;
   font-size: 20px;
   text-decoration: none;
 
@@ -152,14 +149,14 @@ main h3{
   list-style-type: none;
   margin: 0;
   padding: 0;
+
 }
 
 .Referencias li {
   margin-bottom: 5px;
-  background-color: aliceblue;
   padding: 10px;
 }
-Esto el
+
 
 /* Agregado para alinear con el código de Formación */
 .Referencias h2,
@@ -168,73 +165,33 @@ Esto el
     margin-right:auto;
 }
 
-.descripcion h3{ 
-  color: black;
-  font-family: 'Gagalin';
+
+h2{
+  color: #146C94;
   text-align: center;
+  font-family: "Gagalin";
 }
 
-.descripcion p{
-  color: black;
-  font-size: 20px;
-  text-decoration: none;
-  display: inline-block;
-  padding: 20px;
-}
-
-.informacion {
-  color: black;
-  font-size: 20px;
-  text-decoration: none;
-  display: inline-block;
-  padding: 20px;
-  
-
-}
-
-
-
-
-
-.informacion h2{
-  color: black;
-  font-family: 'Gagalin';
-  text-align: center;
-}
 
 
 .Formación {
-  color: black;
-  font-size: 20px;
-  text-decoration: none;
-  display: inline-block;
-  padding: 20px;
   transition: all 0.5s ease-in-out;
 }
 
-.Formación h2 {
+h3{
   font-size: 24px;
   margin-bottom: 10px;
-  color: black;
+  color: #146C94;
   font-family: 'Gagalin';
   text-align: center;
-}
-
-.Formación h3 {
-  font-size: 20px;
-  margin-bottom: 5px;
-  color: black;
-  font-family: 'Gagalin';
-  text-align: center;
-
 }
 
 .Formación p {
-  margin-bottom: 10px;
-  margin-bottom: 20px;
-  color: black;
+  color: #19A7CE;
   font-size: 20px;
   text-decoration: none;
+  padding: 20px;
+  text-align: justify;
 
 }
 
@@ -243,7 +200,7 @@ Esto el
 }
 
 .Formación p:hover {
-  color: burlywood;
+  color: #AFD3E2;
 }
 
 .Formación ul {
@@ -277,7 +234,7 @@ Esto el
 
 .burbuja{
   border-radius: 50%;
-  background: #f6d1de;
+  background: #F6F1F1;
   opacity: .3;
 
   position: absolute;
@@ -398,12 +355,14 @@ Esto el
 
 
 footer{
-  background-color:  #1A5CAD;
+  background-color:  #146C94;
   padding: 1em 0;
   text-align: center;
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 10vh;
+  color: #F6F1F1;
 }
 body{
   position: relative;
@@ -414,3 +373,68 @@ body{
 
 
 
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loaded .loader {
+  display: none;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #146C94;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  height: 10vh;
+}
+
+input[type=submit] {
+  background-color: #AFD3E2;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #19A7CE;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #F6F1F1;
+  padding: 20px;
+}
+
+label{
+  color: #19A7CE;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+}
+
+.container h3{
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #146C94;
+  font-family: 'Gagalin';
+  text-align: center;
+
+}
